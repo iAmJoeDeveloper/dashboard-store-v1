@@ -1,10 +1,11 @@
 import './index.css'
+import Sidebar from './components/shared/Sidebar'
 
 function App() {
 	return (
 		<>
-			<div className='bg-indigo-500'>
-				<h1 className='text-3xl font-bold underline'>Hello World!</h1>
+			<div className='bg-[#262837] w-full min-h-screen'>
+				<Sidebar />
 			</div>
 		</>
 	)
