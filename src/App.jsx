@@ -4,7 +4,7 @@ import { RiMenu2Fill, RiUser3Line, RiAddLine, RiPieChart2Line, RiCloseLine } fro
 import Sidebar from './components/shared/Sidebar'
 
 function App() {
-	const [showMenu, setShowMenu] = useState(true)
+	const [showMenu, setShowMenu] = useState(false)
 	const [showOrder, setShowOrder] = useState(false)
 
 	const toggleMenu = () => {
