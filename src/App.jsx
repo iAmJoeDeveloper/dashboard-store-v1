@@ -1,6 +1,13 @@
 import { useState } from 'react'
 // import './index.css'
-import { RiMenu2Fill, RiUser3Line, RiAddLine, RiPieChart2Line, RiCloseLine } from 'react-icons/ri'
+import {
+	RiMenu2Fill,
+	RiUser3Line,
+	RiAddLine,
+	RiPieChart2Line,
+	RiCloseLine,
+	RiSearch2Line,
+} from 'react-icons/ri'
 import Sidebar from './components/shared/Sidebar'
 
 function App() {
@@ -8,7 +15,7 @@ function App() {
 	const [showOrder, setShowOrder] = useState(false)
 
 	const toggleMenu = () => {
-		setShowMenu(!showMenu)
+		setShowMenu(showMenu)
 	}
 
 	return (
@@ -30,6 +37,28 @@ function App() {
 						{showMenu ? <RiCloseLine /> : <RiMenu2Fill />}
 					</button>
 				</nav>
+				<main className='lg:pl-28 grid grids-cols-1 lg:grid-cols-8'>
+					<div className='lg:col-span-6'>
+						<header className='p-4'>
+							<div className='flex flex-col gap-4'>
+								<div>
+									<h1 className='text-2xl text-gray-300'>Jaegar Resto</h1>
+									<p className='text-gray-500'>07 October 2023</p>
+								</div>
+								<form>
+									<div className='w-full relative'>
+										<RiSearch2Line className='absolute left-3 top-1/2 -translate-y-1/2 text-gray-300' />
+										<input
+											type='text'
+											className='bg-[#1F1D2B] w-full py-2 pl-10 pr-4 rounded-lg text-gray-300 outline-none'
+										/>
+									</div>
+								</form>
+							</div>
+						</header>
+					</div>
+					<div className='lg:col-span-2 fixed lg:static right-0'>Carrito</div>
+				</main>
 			</div>
 		</>
 	)
