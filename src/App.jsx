@@ -7,6 +7,7 @@ import {
 	RiPieChart2Line,
 	RiCloseLine,
 	RiSearch2Line,
+	RiArrowDownSLine,
 } from 'react-icons/ri'
 import Sidebar from './components/shared/Sidebar'
 
@@ -42,7 +43,7 @@ function App() {
 						{/* Header */}
 						<header className='p-4'>
 							{/* Title and Search */}
-							<div className='flex flex-col gap-4 mb-6'>
+							<div className='flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6'>
 								<div>
 									<h1 className='text-2xl text-gray-300'>Jaegar Resto</h1>
 									<p className='text-gray-500'>07 October 2023</p>
@@ -59,7 +60,7 @@ function App() {
 								</form>
 							</div>
 							{/* Tabs */}
-							<nav className='text-gray-300 flex items-center justify-between border-b'>
+							<nav className='text-gray-300 flex items-center justify-between lg:justify-start lg:gap-8 border-b mb-6'>
 								<a
 									href='#'
 									className='relative py-2 pr-4 before:w-1/2 before:h-[1px] before:absolute before:bg-[#ec7c6a] before:left-0 before:rounded-full before:-bottom-[1px] text-[#ec7c6a]'
@@ -76,6 +77,14 @@ function App() {
 									Grill
 								</a>
 							</nav>
+							{/* Title Content */}
+							<div className='flex items-center justify-between'>
+								<h2 className='text-xl text-gray-300'>Show Dishes</h2>
+								<button className='flex items-center gap-4 text-gray-300 bg-[#1F1D2B] py-2 px-4 rounded-lg'>
+									<RiArrowDownSLine />
+									Dine in
+								</button>
+							</div>
 						</header>
 					</div>
 					<div className='lg:col-span-2 fixed lg:static right-0'>Carrito</div>
