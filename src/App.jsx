@@ -38,10 +38,10 @@ function App() {
 						{showMenu ? <RiCloseLine /> : <RiMenu2Fill />}
 					</button>
 				</nav>
-				<main className='lg:pl-28 grid grids-cols-1 lg:grid-cols-8'>
+				<main className='lg:pl-28 grid grids-cols-1 lg:grid-cols-8 p-4'>
 					<div className='lg:col-span-6'>
 						{/* Header */}
-						<header className='p-4'>
+						<header>
 							{/* Title and Search */}
 							<div className='flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6'>
 								<div>
@@ -77,15 +77,29 @@ function App() {
 									Grill
 								</a>
 							</nav>
-							{/* Title Content */}
-							<div className='flex items-center justify-between'>
-								<h2 className='text-xl text-gray-300'>Show Dishes</h2>
-								<button className='flex items-center gap-4 text-gray-300 bg-[#1F1D2B] py-2 px-4 rounded-lg'>
-									<RiArrowDownSLine />
-									Dine in
-								</button>
-							</div>
 						</header>
+						{/* Title Content */}
+						<div className='flex items-center justify-between mb-10'>
+							<h2 className='text-xl text-gray-300'>Show Dishes</h2>
+							<button className='flex items-center gap-4 text-gray-300 bg-[#1F1D2B] py-2 px-4 rounded-lg'>
+								<RiArrowDownSLine />
+								Dine in
+							</button>
+						</div>
+						{/* Content */}
+						<div className='p-8 grid grid-col-1'>
+							{/* Card */}
+							<div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
+								<img
+									src='img/Pizza-1.png'
+									alt='Pizza'
+									className='h-40 w-40 object-cover -mt-20 shadow-2xl rounded-full'
+								/>
+								<p className='text-xl'>Speacy seasoned seafood noodles</p>
+								<span className='text-gray-400'>$2.29</span>
+								<p className='text-gray-600'>20 Bowls available</p>
+							</div>
+						</div>
 					</div>
 					<div className='lg:col-span-2 fixed lg:static right-0'>Carrito</div>
 				</main>
