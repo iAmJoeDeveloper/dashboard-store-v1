@@ -38,8 +38,8 @@ function App() {
 						{showMenu ? <RiCloseLine /> : <RiMenu2Fill />}
 					</button>
 				</nav>
-				<main className='lg:pl-28 grid grids-cols-1 lg:grid-cols-8 p-4'>
-					<div className='lg:col-span-6'>
+				<main className='lg:pl-32 grid grids-cols-1 lg:grid-cols-8 p-4 pb-20'>
+					<div className='lg:col-span-6 p-8'>
 						{/* Header */}
 						<header>
 							{/* Title and Search */}
@@ -87,7 +87,62 @@ function App() {
 							</button>
 						</div>
 						{/* Content */}
-						<div className='p-8 grid grid-col-1'>
+						<div className='p-8 grid md:grid-cols-2 lg:grid-cols-3 grid-col-1 gap-16'>
+							{/* Card */}
+							<div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
+								<img
+									src='img/Pizza-1.png'
+									alt='Pizza'
+									className='h-40 w-40 object-cover -mt-20 shadow-2xl rounded-full'
+								/>
+								<p className='text-xl'>Speacy seasoned seafood noodles</p>
+								<span className='text-gray-400'>$2.29</span>
+								<p className='text-gray-600'>20 Bowls available</p>
+							</div>
+							{/* Card */}
+							<div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
+								<img
+									src='img/Pizza-1.png'
+									alt='Pizza'
+									className='h-40 w-40 object-cover -mt-20 shadow-2xl rounded-full'
+								/>
+								<p className='text-xl'>Speacy seasoned seafood noodles</p>
+								<span className='text-gray-400'>$2.29</span>
+								<p className='text-gray-600'>20 Bowls available</p>
+							</div>
+							{/* Card */}
+							<div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
+								<img
+									src='img/Pizza-1.png'
+									alt='Pizza'
+									className='h-40 w-40 object-cover -mt-20 shadow-2xl rounded-full'
+								/>
+								<p className='text-xl'>Speacy seasoned seafood noodles</p>
+								<span className='text-gray-400'>$2.29</span>
+								<p className='text-gray-600'>20 Bowls available</p>
+							</div>
+							{/* Card */}
+							<div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
+								<img
+									src='img/Pizza-1.png'
+									alt='Pizza'
+									className='h-40 w-40 object-cover -mt-20 shadow-2xl rounded-full'
+								/>
+								<p className='text-xl'>Speacy seasoned seafood noodles</p>
+								<span className='text-gray-400'>$2.29</span>
+								<p className='text-gray-600'>20 Bowls available</p>
+							</div>
+							{/* Card */}
+							<div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
+								<img
+									src='img/Pizza-1.png'
+									alt='Pizza'
+									className='h-40 w-40 object-cover -mt-20 shadow-2xl rounded-full'
+								/>
+								<p className='text-xl'>Speacy seasoned seafood noodles</p>
+								<span className='text-gray-400'>$2.29</span>
+								<p className='text-gray-600'>20 Bowls available</p>
+							</div>
 							{/* Card */}
 							<div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
 								<img
