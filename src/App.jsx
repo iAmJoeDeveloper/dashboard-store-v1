@@ -39,7 +39,8 @@ function App() {
 					</button>
 				</nav>
 				<main className='lg:pl-32 grid grids-cols-1 lg:grid-cols-8 p-4 pb-20'>
-					<div className='lg:col-span-6 p-8'>
+					{/* Main Content */}
+					<div className='lg:col-span-6 md:p-8'>
 						{/* Header */}
 						<header>
 							{/* Title and Search */}
@@ -156,7 +157,13 @@ function App() {
 							</div>
 						</div>
 					</div>
-					<div className='lg:col-span-2 fixed lg:static right-0'>Carrito</div>
+					{/* Orders / Carrito */}
+					<div className='lg:col-span-2 fixed lg:static top-0 right-0 bg-[#1F1D2B] w-full h-full'>
+						<div className='relative pt-16 text-gray-300 p-8'>
+							<RiCloseLine className='absolute left-4 top-4 p-3 box-content text-gray-300 text-xl bg-[#262837] rounded-full' />
+							<h1 className='text-2xl mt-4'>Order #1276</h1>
+						</div>
+					</div>
 				</main>
 			</div>
 		</>
