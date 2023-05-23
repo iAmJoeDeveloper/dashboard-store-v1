@@ -18,10 +18,12 @@ function App() {
 
 	const toggleMenu = () => {
 		setShowMenu(!showMenu)
+		setShowOrder(false)
 	}
 
 	const toggleOrders = () => {
 		setShowOrder(!showOrder)
+		setShowMenu(false)
 	}
 
 	return (
@@ -163,7 +165,7 @@ function App() {
 						</div>
 					</div>
 					<div
-						className={`lg:col-span-2 fixed lg:static top-0 right-0 bg-[#1F1D2B] w-full h-full transition-all ${
+						className={`lg:col-span-2 fixed lg:static top-0 bg-[#1F1D2B] w-full h-full transition-all ${
 							showOrder ? 'right-0' : '-right-full'
 						}`}
 					>
