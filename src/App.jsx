@@ -1,13 +1,6 @@
 import { useState } from 'react'
 // import './index.css'
-import {
-	RiMenu2Fill,
-	RiUser3Line,
-	RiAddLine,
-	RiPieChart2Line,
-	RiCloseLine,
-	RiArrowDownSLine,
-} from 'react-icons/ri'
+import { RiArrowDownSLine } from 'react-icons/ri'
 import Sidebar from './components/shared/Sidebar'
 import Car from './components/shared/Car'
 import Header from './components/shared/Header'
@@ -33,20 +26,7 @@ function App() {
 				<Sidebar showMenu={showMenu} />
 				<Car showOrder={showOrder} setShowOrder={setShowOrder} />
 				{/* Menu Mobile */}
-				<nav className='bg-[#1F1D2B] lg:hidden fixed w-full bottom-0 left-0 text-3xl text-gray-400 py-2 px-8 flex items-center justify-between rounded-tl-xl rounded-tr-xl'>
-					<button className='p-2'>
-						<RiUser3Line />
-					</button>
-					<button className='p-2'>
-						<RiAddLine />
-					</button>
-					<button onClick={toggleOrders} className='p-2'>
-						<RiPieChart2Line />
-					</button>
-					<button onClick={toggleMenu} className='text-white bg-red-400 p-2'>
-						{showMenu ? <RiCloseLine /> : <RiMenu2Fill />}
-					</button>
-				</nav>
+
 				<main className='lg:pl-32 lg:pr-96 pb-20'>
 					{/* Main Content */}
 					<div className='md:p-8 p-4'>
