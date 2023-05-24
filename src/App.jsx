@@ -6,12 +6,12 @@ import {
 	RiAddLine,
 	RiPieChart2Line,
 	RiCloseLine,
-	RiSearch2Line,
 	RiArrowDownSLine,
 } from 'react-icons/ri'
 import Sidebar from './components/shared/Sidebar'
 import Car from './components/shared/Car'
 import Header from './components/shared/Header'
+import Card from './components/shared/Card'
 
 function App() {
 	const [showMenu, setShowMenu] = useState(false)
@@ -63,71 +63,54 @@ function App() {
 						{/* Content */}
 						<div className='p-8 grid md:grid-cols-2 lg:grid-cols-3 grid-col-1 gap-16'>
 							{/* Card */}
-							<div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
-								<img
-									src='img/Pizza-1.png'
-									alt='Pizza'
-									className='h-40 w-40 object-cover -mt-20 shadow-2xl rounded-full'
-								/>
-								<p className='text-xl'>Speacy seasoned seafood noodles</p>
-								<span className='text-gray-400'>$2.29</span>
-								<p className='text-gray-600'>20 Bowls available</p>
-							</div>
+							<Card
+								img={'img/Pizza-1.png'}
+								description={'Clasic Margarita'}
+								price={'$2.50'}
+								inventory={'22'}
+							/>
 							{/* Card */}
-							<div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
-								<img
-									src='img/Pizza-1.png'
-									alt='Pizza'
-									className='h-40 w-40 object-cover -mt-20 shadow-2xl rounded-full'
-								/>
-								<p className='text-xl'>Speacy seasoned seafood noodles</p>
-								<span className='text-gray-400'>$2.29</span>
-								<p className='text-gray-600'>20 Bowls available</p>
-							</div>
+							<Card
+								img={'img/Pizza-2.webp'}
+								description={'Big Cheese Ham'}
+								price={'$2.50'}
+								inventory={'22'}
+							/>
 							{/* Card */}
-							<div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
-								<img
-									src='img/Pizza-1.png'
-									alt='Pizza'
-									className='h-40 w-40 object-cover -mt-20 shadow-2xl rounded-full'
-								/>
-								<p className='text-xl'>Speacy seasoned seafood noodles</p>
-								<span className='text-gray-400'>$2.29</span>
-								<p className='text-gray-600'>20 Bowls available</p>
-							</div>
+							<Card
+								img={'img/Pizza-3.webp'}
+								description={'Mushroom Special'}
+								price={'$2.50'}
+								inventory={'22'}
+							/>
 							{/* Card */}
-							<div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
-								<img
-									src='img/Pizza-1.png'
-									alt='Pizza'
-									className='h-40 w-40 object-cover -mt-20 shadow-2xl rounded-full'
-								/>
-								<p className='text-xl'>Speacy seasoned seafood noodles</p>
-								<span className='text-gray-400'>$2.29</span>
-								<p className='text-gray-600'>20 Bowls available</p>
-							</div>
+							<Card
+								img={'img/Pizza-2.webp'}
+								description={'Big Cheese Ham'}
+								price={'$2.50'}
+								inventory={'22'}
+							/>
 							{/* Card */}
-							<div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
-								<img
-									src='img/Pizza-1.png'
-									alt='Pizza'
-									className='h-40 w-40 object-cover -mt-20 shadow-2xl rounded-full'
-								/>
-								<p className='text-xl'>Speacy seasoned seafood noodles</p>
-								<span className='text-gray-400'>$2.29</span>
-								<p className='text-gray-600'>20 Bowls available</p>
-							</div>
+							<Card
+								img={'img/Pizza-3.webp'}
+								description={'Mushroom Special'}
+								price={'$2.50'}
+								inventory={'22'}
+							/>
 							{/* Card */}
-							<div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
-								<img
-									src='img/Pizza-1.png'
-									alt='Pizza'
-									className='h-40 w-40 object-cover -mt-20 shadow-2xl rounded-full'
-								/>
-								<p className='text-xl'>Speacy seasoned seafood noodles</p>
-								<span className='text-gray-400'>$2.29</span>
-								<p className='text-gray-600'>20 Bowls available</p>
-							</div>
+							<Card
+								img={'img/Pizza-2.webp'}
+								description={'Big Cheese Ham'}
+								price={'$2.50'}
+								inventory={'22'}
+							/>
+							{/* Card */}
+							<Card
+								img={'img/Pizza-3.webp'}
+								description={'Mushroom Special'}
+								price={'$2.50'}
+								inventory={'22'}
+							/>
 						</div>
 					</div>
 				</main>
