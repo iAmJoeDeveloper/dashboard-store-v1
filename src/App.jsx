@@ -11,6 +11,7 @@ import {
 } from 'react-icons/ri'
 import Sidebar from './components/shared/Sidebar'
 import Car from './components/shared/Car'
+import Header from './components/shared/Header'
 
 function App() {
 	const [showMenu, setShowMenu] = useState(false)
@@ -50,43 +51,7 @@ function App() {
 					{/* Main Content */}
 					<div className='md:p-8 p-4'>
 						{/* Header */}
-						<header>
-							{/* Title and Search */}
-							<div className='flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6'>
-								<div>
-									<h1 className='text-2xl text-gray-300'>Jaegar Resto</h1>
-									<p className='text-gray-500'>07 October 2023</p>
-								</div>
-								<form>
-									<div className='w-full relative'>
-										<RiSearch2Line className='absolute left-3 top-1/2 -translate-y-1/2 text-gray-300' />
-										<input
-											type='text'
-											className='bg-[#1F1D2B] w-full py-2 pl-10 pr-4 rounded-lg text-gray-300 outline-none'
-											placeholder='Search...'
-										/>
-									</div>
-								</form>
-							</div>
-							{/* Tabs */}
-							<nav className='text-gray-300 flex items-center justify-between lg:justify-start lg:gap-8 border-b mb-6'>
-								<a
-									href='#'
-									className='relative py-2 pr-4 before:w-1/2 before:h-[1px] before:absolute before:bg-[#ec7c6a] before:left-0 before:rounded-full before:-bottom-[1px] text-[#ec7c6a]'
-								>
-									Hot Dishes
-								</a>
-								<a href='#' className='py-2 pr-4 '>
-									Cold Dishes
-								</a>
-								<a href='#' className='py-2 pr-4'>
-									Soup
-								</a>
-								<a href='#' className='py-2 pr-4'>
-									Grill
-								</a>
-							</nav>
-						</header>
+						<Header />
 						{/* Title Content */}
 						<div className='flex items-center justify-between mb-10'>
 							<h2 className='text-xl text-gray-300'>Show Dishes</h2>
