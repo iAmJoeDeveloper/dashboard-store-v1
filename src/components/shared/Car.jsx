@@ -1,4 +1,3 @@
-import React from 'react'
 import { RiCloseLine, RiDeleteBin6Line } from 'react-icons/ri'
 
 const Car = (props) => {
@@ -52,7 +51,7 @@ const Car = (props) => {
 									<input
 										type='number'
 										size={10}
-										value={20}
+										// value={20}
 										className='bg-[#1F1D2B] py-2 px-2 w-[35px]'
 									/>
 									{/* <span>2</span> */}
@@ -94,7 +93,7 @@ const Car = (props) => {
 									<input
 										type='number'
 										size={10}
-										value={20}
+										// value={20}
 										className='bg-[#1F1D2B] py-2 px-2 w-[35px]'
 									/>
 									{/* <span>2</span> */}
@@ -136,7 +135,7 @@ const Car = (props) => {
 									<input
 										type='number'
 										size={10}
-										value={20}
+										// value={20}
 										className='bg-[#1F1D2B] py-2 px-2 w-[35px]'
 									/>
 									{/* <span>2</span> */}
@@ -178,7 +177,7 @@ const Car = (props) => {
 									<input
 										type='number'
 										size={10}
-										value={20}
+										// value={20}
 										className='bg-[#1F1D2B] py-2 px-2 w-[35px]'
 									/>
 									{/* <span>2</span> */}

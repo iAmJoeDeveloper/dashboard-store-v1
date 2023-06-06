@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import { RiSearch2Line } from 'react-icons/ri'
 
 const Header = () => {
@@ -37,6 +38,9 @@ const Header = () => {
 				<a href='#' className='py-2 pr-4'>
 					Grill
 				</a>
+				<NavLink to='/Grill' className='py-2 pr-4'>
+					Grill
+				</NavLink>
 			</nav>
 		</header>
 	)
