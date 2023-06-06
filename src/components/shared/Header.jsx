@@ -23,21 +23,18 @@ const Header = () => {
 			</div>
 			{/* Tabs */}
 			<nav className='text-gray-300 flex items-center justify-between lg:justify-start lg:gap-8 border-b mb-6'>
-				<a
-					href='#'
+				<NavLink
+					to='/'
 					className='relative py-2 pr-4 before:w-1/2 before:h-[1px] before:absolute before:bg-[#ec7c6a] before:left-0 before:rounded-full before:-bottom-[1px] text-[#ec7c6a]'
 				>
 					Hot Dishes
-				</a>
-				<a href='#' className='py-2 pr-4 '>
+				</NavLink>
+				<NavLink to='/cold-dishes' className='py-2 pr-4 '>
 					Cold Dishes
-				</a>
-				<a href='#' className='py-2 pr-4'>
+				</NavLink>
+				<NavLink to='/soup' className='py-2 pr-4'>
 					Soup
-				</a>
-				<a href='#' className='py-2 pr-4'>
-					Grill
-				</a>
+				</NavLink>
 				<NavLink to='/Grill' className='py-2 pr-4'>
 					Grill
 				</NavLink>

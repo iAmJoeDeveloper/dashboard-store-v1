@@ -1,11 +1,13 @@
 import { useState } from 'react'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 // import './index.css'
 import { RiArrowDownSLine } from 'react-icons/ri'
 import Sidebar from './components/shared/Sidebar'
 import Car from './components/shared/Car'
 import Header from './components/shared/Header'
 import Content from './components/shared/Content'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import fakedatabase from './fakedatabase'
+import fakedatabase2 from './fakedatabase2'
 
 function App() {
 	const [showMenu, setShowMenu] = useState(false)
@@ -43,7 +45,8 @@ function App() {
 							</div>
 							<Routes>
 								{/* Content */}
-								<Route path='/' element={<Content />} />
+								<Route path='/' element={<Content fakedatabase={fakedatabase} />} />
+								<Route path='/grill' element={<Content fakedatabase={fakedatabase2} />} />
 							</Routes>
 						</div>
 					</main>

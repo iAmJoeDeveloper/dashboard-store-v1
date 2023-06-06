@@ -1,21 +1,22 @@
 import Card from './Card'
-import fakedatabase from '../../fakedatabase'
 
-const Content = () => {
-	const pizzas = fakedatabase.map((pizza) => (
+const Content = (props) => {
+	const { fakedatabase } = props
+
+	const data = fakedatabase.map((product) => (
 		<Card
-			key={pizza.id}
-			img={pizza.img}
-			description={pizza.description}
-			price={pizza.price}
-			inventory={pizza.inventory}
+			key={product.id}
+			img={product.img}
+			description={product.description}
+			price={product.price}
+			inventory={product.inventory}
 		/>
 	))
 
 	return (
 		<div className='p-8 grid md:grid-cols-2 lg:grid-cols-3 grid-col-1 gap-16'>
 			{/* Card */}
-			{pizzas}
+			{data}
 			{/* <Card
 				img={'img/Pizza-3.webp'}
 				description={'Mushroom Special'}
