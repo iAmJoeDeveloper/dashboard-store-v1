@@ -1,7 +1,16 @@
+import { useState } from 'react'
 import { RiCloseLine, RiDeleteBin6Line } from 'react-icons/ri'
 
 const Car = (props) => {
 	const { showOrder, setShowOrder } = props
+
+	const [qty, setQty] = useState(1)
+
+	const handleQty = (e) => {
+		const result = e.target.value.replace(/\D/g, '')
+
+		setQty(result)
+	}
 
 	return (
 		<div
@@ -49,9 +58,53 @@ const Car = (props) => {
 								{/* QTY */}
 								<div className='col-span-1  text-center'>
 									<input
-										type='number'
+										type='text'
 										size={10}
-										// value={20}
+										value={qty}
+										className='bg-[#1F1D2B] py-2 px-2 w-[35px]'
+										onChange={handleQty}
+									/>
+									{/* <span>2</span> */}
+								</div>
+								{/* Price */}
+								<div className='py-2'>
+									<span>14.58</span>
+								</div>
+							</div>
+							{/* Note */}
+							<div className='grid grid-cols-6 items-center gap-1'>
+								<form className='col-span-5 '>
+									<input
+										type='text'
+										className='bg-[#1F1D2B] py-2 px-4 rounded-lg outline-none'
+										placeholder='Order note...'
+									/>
+								</form>
+								<div className='col-span-1'>
+									<button className='border border-red-500 p-2 rounded-lg'>
+										<RiDeleteBin6Line className='text-red-500' />
+									</button>
+								</div>
+							</div>
+						</div>
+						{/* Product */}
+						<div className='bg-[#262837] p-4 rounded-xl mb-4'>
+							<div className='grid grid-cols-6 mb-4'>
+								{/* Product Description */}
+								<div className='col-span-4 flex items-center gap-2'>
+									<img src='img/Pizza-1.png' alt='Pizza' className='w-10 h-10 object-cover' />
+									<div>
+										<h5 className='text-sm'>Spaicy Seaso...</h5>
+										<p className='text-xs text-gray-500'>$2.29</p>
+									</div>
+								</div>
+								{/* QTY */}
+								<div className='col-span-1  text-center'>
+									<input
+										type='text'
+										size={10}
+										value={qty}
+										onChange={setQty}
 										className='bg-[#1F1D2B] py-2 px-2 w-[35px]'
 									/>
 									{/* <span>2</span> */}
@@ -91,9 +144,10 @@ const Car = (props) => {
 								{/* QTY */}
 								<div className='col-span-1  text-center'>
 									<input
-										type='number'
+										type='text'
 										size={10}
-										// value={20}
+										value={qty}
+										onChange={setQty}
 										className='bg-[#1F1D2B] py-2 px-2 w-[35px]'
 									/>
 									{/* <span>2</span> */}
@@ -133,51 +187,10 @@ const Car = (props) => {
 								{/* QTY */}
 								<div className='col-span-1  text-center'>
 									<input
-										type='number'
-										size={10}
-										// value={20}
-										className='bg-[#1F1D2B] py-2 px-2 w-[35px]'
-									/>
-									{/* <span>2</span> */}
-								</div>
-								{/* Price */}
-								<div className='py-2'>
-									<span>14.58</span>
-								</div>
-							</div>
-							{/* Note */}
-							<div className='grid grid-cols-6 items-center gap-1'>
-								<form className='col-span-5 '>
-									<input
 										type='text'
-										className='bg-[#1F1D2B] py-2 px-4 rounded-lg outline-none'
-										placeholder='Order note...'
-									/>
-								</form>
-								<div className='col-span-1'>
-									<button className='border border-red-500 p-2 rounded-lg'>
-										<RiDeleteBin6Line className='text-red-500' />
-									</button>
-								</div>
-							</div>
-						</div>
-						{/* Product */}
-						<div className='bg-[#262837] p-4 rounded-xl mb-4'>
-							<div className='grid grid-cols-6 mb-4'>
-								{/* Product Description */}
-								<div className='col-span-4 flex items-center gap-2'>
-									<img src='img/Pizza-1.png' alt='Pizza' className='w-10 h-10 object-cover' />
-									<div>
-										<h5 className='text-sm'>Spaicy Seaso...</h5>
-										<p className='text-xs text-gray-500'>$2.29</p>
-									</div>
-								</div>
-								{/* QTY */}
-								<div className='col-span-1  text-center'>
-									<input
-										type='number'
 										size={10}
-										// value={20}
+										value={qty}
+										onChange={setQty}
 										className='bg-[#1F1D2B] py-2 px-2 w-[35px]'
 									/>
 									{/* <span>2</span> */}
